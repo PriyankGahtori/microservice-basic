@@ -1,14 +1,11 @@
-package com.priyank.microservicebasics;
+package com.priyank.microservicebasics.helloworld;
 
-import org.apache.logging.log4j.message.Message;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class UserController {
+public class HelloWorldController {
 
 	//@RequestMapping(method = RequestMethod.GET, path = "/hello-world")
 	@GetMapping("/hello-world")

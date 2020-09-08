@@ -1,4 +1,4 @@
-package com.priyank.microservicebasics;
+package com.priyank.microservicebasics.helloworld;
 
 public class HelloBean {
 

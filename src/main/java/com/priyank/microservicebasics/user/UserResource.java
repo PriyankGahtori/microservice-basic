@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.priyank.microservicebasics.exception.UserNotFoundException;
+
 @RestController
 public class UserResource {
 	
@@ -28,7 +30,10 @@ public class UserResource {
 	@GetMapping(path = "/users/{id}")
 	public User retriveUser(@PathVariable int id)
 	{
-		return service.findOne(id);		
+		User user = service.findOne(id);
+		if(user != null)
+			return user;
+		throw new UserNotFoundException("User with id " + id + " not found!");
 	}
     
 	@PostMapping("/users")

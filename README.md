@@ -1,8 +1,6 @@
-**
 
 ## Micro Services Basic
-
-** 
+ 
 This Repository is based on udemy course *[Master Microservices with Spring Boot and Spring Cloud](https://www.udemy.com/course/microservices-with-spring-boot-and-spring-cloud/)*
 
 Author's Original Repo - [https://github.com/in28minutes/spring-microservices](https://github.com/in28minutes/spring-microservices)
